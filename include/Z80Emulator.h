@@ -1,0 +1,5 @@
+
+#ifndef Z80EMULATOR_H
+#define Z80EMULATOR_H
+
+#endif //Z80EMULATOR_H
