@@ -3,13 +3,20 @@ project(Z80_Emulator)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(Z80_Emulator src/main.cpp
+set(SOURCE
+        src/main.cpp
         src/Z80Emulator.cpp
         src/Z80Registers.cpp
         src/Z80Memory.cpp
         src/Instructions.cpp
+)
+
+set(HEADERS
         include/Z80Emulator.h
         include/Z80Registers.h
         include/Z80Memory.h
         include/Instructions.h
-        tests/test_z80.cpp)
+)
+
+
+add_executable(Z80_Emulator ${SOURCE} ${HEADERS})
